@@ -236,6 +236,7 @@ header .lang {
   content: "contact";
 }
 
+#particles-two,
 #particles-js {
   position: fixed;
   top: 0;
@@ -361,4 +362,319 @@ header .lang {
 
 /*****************************************************************************************************/
 /********************************************   end home page   **************************************/
+/*****************************************************************************************************/
+
+/*****************************************************************************************************/
+/******************************************   start about page   *************************************/
+/*****************************************************************************************************/
+
+.about_sec {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+
+.about_sec .container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about_sec .about_text {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about_sec .about_text .description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about_sec .about_text .description h1 {
+  font-size: 32px;
+}
+
+.about_sec .about_text .description h1 span {
+  color: var(--details-color);
+}
+
+.about_sec .about_text .description p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.about_sec .about_text .about_btn {
+  display: flex;
+  gap: 15px;
+}
+
+.about_sec .about_text .about_btn a {
+  padding: 10px 20px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border: 1px solid var(--details-color);
+  border-radius: 30px;
+  background-color: var(--details-color);
+  color: var(--second-color);
+  transition: 0.3s ease-in-out;
+}
+
+.about_sec .about_text .about_btn a i {
+  font-size: 16px;
+}
+
+.about_sec .about_text .about_btn a span {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.about_sec .about_text .about_btn .bg_transparent {
+  background-color: transparent;
+  border-color: var(--second-color);
+}
+
+.about_sec .about_text .about_btn .bg_transparent:hover {
+  background-color: transparent;
+  color: var(--details-color);
+  border-color: var(--details-color);
+}
+
+.about_sec .about_text .about_btn a:hover {
+  background-color: var(--second-color);
+  color: var(--details-color);
+  border-color: var(--second-color);
+}
+
+.about_sec .skills_sec {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about_sec .skills_sec .navigation_skills ul {
+  display: flex;
+  gap: 30px;
+}
+
+.about_sec .skills_sec .navigation_skills ul li {
+  padding: 5px 0;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--second-color);
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.about_sec .skills_sec .navigation_skills ul li:hover,
+.about_sec .skills_sec .navigation_skills ul li.active {
+  color: var(--details-color);
+}
+
+.about_sec .skills_sec .navigation_skills ul li::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--details-color);
+  transition: 0.3s ease-in-out;
+}
+
+.about_sec .skills_sec .navigation_skills ul li:hover::after,
+.about_sec .skills_sec .navigation_skills ul li.active::after {
+  width: 100%;
+}
+
+.about_sec .skills_sec .content_skills ul li {
+  display: none;
+}
+
+.about_sec .skills_sec .content_skills ul li.active {
+  display: block;
+}
+
+.about_sec .skills_sec .content_skills ul li .skills {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-right: 40px;
+}
+
+.about_sec .skills_sec .content_skills ul li .skills .single_skill {
+  width: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+.about_sec .skills_sec .content_skills ul li .skills .single_skill img {
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.about_sec .skills_sec .content_skills ul li .skills .single_skill img:hover {
+  transform: scale(0.8);
+}
+
+.about_sec
+  .skills_sec
+  .content_skills
+  ul
+  li
+  .skills
+  .single_skill:hover::after {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2px 10px;
+  background-color: var(--second-color);
+  color: var(--details-color);
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.about_sec .skills_sec .content_skills ul li .skills #html:hover::after {
+  content: "HTML";
+}
+
+.about_sec .skills_sec .content_skills ul li .skills #css:hover::after {
+  content: "CSS";
+}
+
+.about_sec .skills_sec .content_skills ul li .skills #javascript:hover::after {
+  content: "Java Script";
+  width: 70px;
+}
+
+.about_sec .skills_sec .content_skills ul li .skills #php:hover::after {
+  content: "PHP";
+}
+
+.about_sec .skills_sec .content_skills ul li .skills #sql:hover::after {
+  content: "SQL";
+}
+
+.about_sec .skills_sec .content_skills ul li .skills #uml:hover::after {
+  content: "UML";
+}
+
+.about_sec .skills_sec .content_skills ul li .skills #laravel:hover::after {
+  content: "LARAVEL";
+}
+
+.about_sec .skills_sec .content_skills ul li .skills #vscode:hover::after {
+  content: "VS Code";
+  width: 52px;
+}
+.about_sec .skills_sec .content_skills ul li .skills #git:hover::after {
+  content: "GIT";
+}
+.about_sec .skills_sec .content_skills ul li .skills #github:hover::after {
+  content: "Github";
+}
+
+.about_sec .skills_sec .content_skills ul li .skills #xampp:hover::after {
+  content: "XAMPP";
+}
+.about_sec .skills_sec .content_skills ul li .skills #composer:hover::after {
+  content: "Composer";
+}
+
+/* start responsive */
+
+@media (max-width: 950px) {
+  .about_sec .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .about_sec .skills_sec,
+  .about_sec .about_text {
+    width: 100%;
+  }
+  .about_sec .skills_sec .content_skills ul li .skills {
+    margin: 0;
+  }
+  .about_sec .about_text .description p {
+    margin-right: 40px;
+  }
+  .about_sec .about_text .description h1 {
+    font-size: 30px;
+  }
+  .about_sec .skills_sec .navigation_skills ul li,
+  .about_sec .about_text .about_btn a span,
+  .about_sec .about_text .description p {
+    font-size: 13px;
+  }
+  .about_sec .about_text .about_btn a i {
+    font-size: 15px;
+  }
+  .about_sec .skills_sec .content_skills ul li .skills .single_skill {
+    width: 45px;
+  }
+  .about_sec
+    .skills_sec
+    .content_skills
+    ul
+    li
+    .skills
+    .single_skill:hover::after {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 650px) {
+  .about_sec .about_text .description p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .about_sec .about_text .description h1 {
+    font-size: 28px;
+  }
+  .about_sec .skills_sec .navigation_skills ul li,
+  .about_sec .about_text .about_btn a span,
+  .about_sec .about_text .description p {
+    font-size: 12px;
+  }
+  .about_sec .about_text .about_btn a i {
+    font-size: 14px;
+  }
+  .about_sec .skills_sec .content_skills ul li .skills .single_skill {
+    width: 40px;
+  }
+  .about_sec
+    .skills_sec
+    .content_skills
+    ul
+    li
+    .skills
+    .single_skill:hover::after {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .about_sec {
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+}
+
+/* end responsive */
+
+/*****************************************************************************************************/
+/******************************************   end about page   ***************************************/
 /*****************************************************************************************************/

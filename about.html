@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yassine CHMAREKH - Portfolio</title>
+
+    <!-- link to file css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- link font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- website icon -->
+    <link rel="icon" href="assets/images/icon/website-icon.png" />
+  </head>
+  <body>
+    <!-- particles-two container -->
+    <div id="particles-two"></div>
+
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo"><h1>Yassine_ChM</h1></a>
+        <select name="language" id="language" class="lang">
+          <option value="fr">français</option>
+          <option value="en">english</option>
+        </select>
+      </div>
+    </header>
+
+    <section class="nav_menu">
+      <div class="container">
+        <ul>
+          <a href="index.html"
+            ><li id="home"><i class="fa-solid fa-house"></i></li
+          ></a>
+          <a href="about.html"
+            ><li id="about" class="active"><i class="fa-solid fa-user"></i></li
+          ></a>
+          <a href="services.html"
+            ><li id="services"><i class="fa-solid fa-gears"></i></li
+          ></a>
+          <a href="projects.html"
+            ><li id="projects"><i class="fa-solid fa-diagram-project"></i></li
+          ></a>
+          <a href="contact.html"
+            ><li id="contact"><i class="fa-solid fa-envelope"></i></li
+          ></a>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about_sec">
+      <div class="container">
+        <div class="about_text">
+          <div class="description">
+            <h1>
+              CHMAREKH Yassine <br>
+              <span>Junior Web Developer</span>
+            </h1>
+            <p>
+              Jeune diplômé de la Faculté des Sciences et Techniques de Settat, titulaire
+              d'une Licence Sciences et Techniques en Génie Informatique, je suis passionné par le
+              développement web. Doté d'une expérience en freelance, je
+              m'efforce de perfectionner mes compétences et de rester à jour
+              avec les dernières technologies pour offrir des solutions
+              créatives et performantes dans le domaine du développement web.
+            </p>
+          </div>
+          <div class="about_btn">
+            <a href="assets/files/CV-yassine-chmarekh.pdf" target="_blank"
+              ><i class="fa-solid fa-file"></i> <span>curriculum vitae</span></a
+            >
+            <a href="#" class="bg_transparent"
+              ><i class="fa-solid fa-diagram-project"></i>
+              <span>projets</span></a
+            >
+          </div>
+        </div>
+        <div class="skills_sec">
+          <nav class="navigation_skills">
+            <ul>
+              <li class="active" data-target="#languages">languages</li>
+              <li data-target="#frameworks">frameworks</li>
+              <li data-target="#tools">tools</li>
+            </ul>
+          </nav>
+          <div class="content_skills">
+            <ul>
+              <li class="active" id="languages">
+                <div class="skills">
+                  <div class="single_skill" id="html">
+                    <img src="assets/images/skills/languages/html.svg" alt="" />
+                  </div>
+                  <div class="single_skill" id="css">
+                    <img src="assets/images/skills/languages/css.svg" alt="" />
+                  </div>
+                  <div class="single_skill" id="javascript">
+                    <img src="assets/images/skills/languages/js.svg" alt="" />
+                  </div>
+                  <div class="single_skill" id="php">
+                    <img src="assets/images/skills/languages/php.svg" alt="" />
+                  </div>
+                  <div class="single_skill" id="sql">
+                    <img src="assets/images/skills/languages/sql.svg" alt="" />
+                  </div>
+                  <div class="single_skill" id="uml">
+                    <img src="assets/images/skills/languages/uml.svg" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li id="frameworks">
+                <div class="skills">
+                  <div class="single_skill" id="laravel">
+                    <img
+                      src="assets/images/skills/frameworks/laravel.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </li>
+              <li id="tools">
+                <div class="skills">
+                  <div class="single_skill" id="vscode">
+                    <img src="assets/images/skills/tools/vs-code.svg" alt="" />
+                  </div>
+                  <div class="single_skill" id="git">
+                    <img src="assets/images/skills/tools/git.svg" alt="" />
+                  </div>
+                  <div class="single_skill" id="github">
+                    <img src="assets/images/skills/tools/github.svg" alt="" />
+                  </div>
+                  <div class="single_skill" id="xampp">
+                    <img src="assets/images/skills/tools/xampp.svg" alt="" />
+                  </div>
+                  <div class="single_skill" id="composer">
+                    <img src="assets/images/skills/tools/composer.svg" alt="" />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- js links -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/app-two.js"></script>
+  </body>
+</html>
