@@ -678,3 +678,135 @@ header .lang {
 /*****************************************************************************************************/
 /******************************************   end about page   ***************************************/
 /*****************************************************************************************************/
+
+/*****************************************************************************************************/
+/****************************************   start contact page   *************************************/
+/*****************************************************************************************************/
+
+.contact_sec {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+
+.contact_sec .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_sec .contact_form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact_sec .contact_form h1 {
+  font-size: 35px;
+}
+
+.contact_sec .contact_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.contact_sec .contact_form form button,
+.contact_sec .contact_form form textarea,
+.contact_sec .contact_form form input {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid var(--parag-color);
+  outline: none;
+  color: var(--parag-color);
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.contact_sec .contact_form form button,
+.contact_sec .contact_form form textarea::placeholder,
+.contact_sec .contact_form form input::placeholder {
+  font-size: 14px;
+  color: var(--parag-color);
+  text-transform: capitalize;
+}
+
+.contact_sec .contact_form form button {
+  width: fit-content;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.contact_sec .contact_form form button:hover {
+  background-color: var(--details-color);
+  color: var(--second-color);
+  border-color: var(--details-color);
+}
+
+.contact_sec .contact_form form textarea:focus::placeholder,
+.contact_sec .contact_form form input:focus::placeholder {
+  color: var(--details-color);
+}
+
+.contact_sec .contact_form form textarea:focus,
+.contact_sec .contact_form form input:focus {
+  border-color: var(--details-color);
+  color: var(--details-color);
+}
+
+.custom-alert-success {
+  border: 1px solid #aadc8c;
+  border-radius: 10px;
+}
+
+.custom-alert-danger {
+  border: 1px solid var(--details-color);
+  border-radius: 10px;
+}
+
+/* start responsive */
+
+@media (max-width: 950px) {
+  .contact_sec .contact_form {
+    width: 60%;
+  }
+  .contact_sec .contact_form h1 {
+    font-size: 33px;
+  }
+  .contact_sec .contact_form form button,
+  .contact_sec .contact_form form textarea::placeholder,
+  .contact_sec .contact_form form input::placeholder {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 650px) {
+  .contact_sec .contact_form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  .contact_sec .contact_form {
+    width: 90%;
+  }
+  .contact_sec .contact_form h1 {
+    font-size: 30px;
+  }
+  .contact_sec .contact_form form button,
+  .contact_sec .contact_form form textarea::placeholder,
+  .contact_sec .contact_form form input::placeholder {
+    font-size: 12px;
+  }
+}
+
+/* end responsive */
+
+/*****************************************************************************************************/
+/****************************************    end contact page    *************************************/
+/*****************************************************************************************************/
