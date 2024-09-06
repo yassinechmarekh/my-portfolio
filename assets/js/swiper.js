@@ -21,6 +21,7 @@ var swiper = new Swiper(".services-swp", {
       dynamicBullests: true,
       clickable: true,
     },
+    spaceBetween: 10,
     slidesPerView: 2,
     // autoplay: {
     //     delay: 3500,
@@ -36,7 +37,6 @@ var swiper = new Swiper(".services-swp", {
       },
       500: {
         slidesPerView: 2,
-        spaceBetween: 10,
       },
       0: {
         slidesPerView: 1,
