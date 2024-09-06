@@ -33,9 +33,9 @@
     <header>
       <div class="container">
         <a href="index.html" class="logo"><h1>Yassine_ChM</h1></a>
-        <select name="language" id="language" class="lang">
-          <option value="fr">français</option>
-          <option value="en">english</option>
+        <select name="language" id="language-selector" class="lang">
+          <option value="fr" data-lang="french" selected>français</option>
+          <option value="en" data-lang="english">english</option>
         </select>
       </div>
     </header>
@@ -53,7 +53,8 @@
             ><li id="services"><i class="fa-solid fa-gears"></i></li
           ></a>
           <a href="projects.html"
-            ><li id="projects" class="active"><i class="fa-solid fa-diagram-project"></i></li
+            ><li id="projects" class="active">
+              <i class="fa-solid fa-diagram-project"></i></li
           ></a>
           <a href="contact.html"
             ><li id="contact">
@@ -66,8 +67,11 @@
     <section class="projects_sec">
       <div class="container">
         <div class="project_text">
-          <h1>mes <span>projets</span></h1>
-          <p>
+          <h1>
+            <first data-lang="my">mes</first>
+            <span data-lang="projectsTitle">projets</span>
+          </h1>
+          <p data-lang="projectsDescription">
             Découvrez une sélection de mes projets qui illustrent ma passion
             pour le développement web. Chaque projet est une opportunité
             d'appliquer mes compétences techniques et de proposer des solutions
@@ -149,7 +153,9 @@
                 <div class="projects-swp mySwiper">
                   <div class="swiper-wrapper projects">
                     <div class="swiper-slide project">
-                      <a href="http://mt-informatique.great-site.net/" target="_blank"
+                      <a
+                        href="http://mt-informatique.great-site.net/"
+                        target="_blank"
                         ><i class="fa-solid fa-link"></i>
                         <span>lien du projet</span></a
                       >
@@ -198,5 +204,6 @@
     <script src="assets/js/particles.js"></script>
     <script src="assets/js/app-two.js"></script>
     <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/lang.js"></script>
   </body>
 </html>

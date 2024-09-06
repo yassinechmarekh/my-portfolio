@@ -27,9 +27,9 @@
     <header>
       <div class="container">
         <a href="index.html" class="logo"><h1>Yassine_ChM</h1></a>
-        <select name="language" id="language" class="lang">
-          <option value="fr">français</option>
-          <option value="en">english</option>
+        <select name="language" id="language-selector" class="lang">
+          <option value="fr" data-lang="french" selected>français</option>
+          <option value="en" data-lang="english">english</option>
         </select>
       </div>
     </header>
@@ -60,7 +60,7 @@
     <section class="contact_sec">
       <div class="container">
         <div class="contact_form">
-          <h1>Contactez-moi</h1>
+          <h1 data-lang="contactme">Contactez-moi</h1>
           <form>
             <input
               type="text"
@@ -76,7 +76,7 @@
               rows="10"
               placeholder="Message"
             ></textarea>
-            <button type="submit">envoyer</button>
+            <button type="submit" data-lang="sendMessage">envoyer</button>
           </form>
         </div>
       </div>
@@ -88,5 +88,6 @@
     <script src="assets/js/particles.js"></script>
     <script src="assets/js/app-two.js"></script>
     <script src="assets/js/contact.js"></script>
+    <script src="assets/js/lang.js"></script>
   </body>
 </html>

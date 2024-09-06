@@ -27,9 +27,9 @@
     <header>
       <div class="container">
         <a href="index.html" class="logo"><h1>Yassine_ChM</h1></a>
-        <select name="language" id="language" class="lang">
-          <option value="fr">français</option>
-          <option value="en">english</option>
+        <select name="language" id="language-selector" class="lang">
+          <option value="fr" data-lang="french" selected>français</option>
+          <option value="en" data-lang="english">english</option>
         </select>
       </div>
     </header>
@@ -62,9 +62,9 @@
           <div class="description">
             <h1>
               CHMAREKH Yassine <br>
-              <span>Junior Web Developer</span>
+              <span data-lang="aboutjob">Junior Web Developer</span>
             </h1>
-            <p>
+            <p data-lang="aboutdescription">
               Jeune diplômé de la Faculté des Sciences et Techniques de Settat, titulaire
               d'une Licence Sciences et Techniques en Génie Informatique, je suis passionné par le
               développement web. Doté d'une expérience en freelance, je
@@ -75,20 +75,20 @@
           </div>
           <div class="about_btn">
             <a href="assets/files/CV-yassine-chmarekh.pdf" target="_blank"
-              ><i class="fa-solid fa-file"></i> <span>curriculum vitae</span></a
+              ><i class="fa-solid fa-file"></i> <span data-lang="btncv">curriculum vitae</span></a
             >
             <a href="#" class="bg_transparent"
               ><i class="fa-solid fa-diagram-project"></i>
-              <span>projets</span></a
+              <span data-lang="btnprojects">projets</span></a
             >
           </div>
         </div>
         <div class="skills_sec">
           <nav class="navigation_skills">
             <ul>
-              <li class="active" data-target="#languages">languages</li>
-              <li data-target="#frameworks">frameworks</li>
-              <li data-target="#tools">tools</li>
+              <li class="active" data-target="#languages" data-lang="languages">langages</li>
+              <li data-target="#frameworks" data-lang="frameworks">frameworks</li>
+              <li data-target="#tools" data-lang="tools">outils</li>
             </ul>
           </nav>
           <div class="content_skills">
@@ -154,5 +154,6 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/particles.js"></script>
     <script src="assets/js/app-two.js"></script>
+    <script src="assets/js/lang.js"></script>
   </body>
 </html>

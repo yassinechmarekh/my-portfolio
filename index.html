@@ -36,9 +36,9 @@
     <header>
       <div class="container">
         <a href="index.html" class="logo"><h1>Yassine_ChM</h1></a>
-        <select name="language" id="language" class="lang">
-          <option value="fr">français</option>
-          <option value="en">english</option>
+        <select name="language" id="language-selector" class="lang">
+          <option value="fr" data-lang="french" selected>français</option>
+          <option value="en" data-lang="english">english</option>
         </select>
       </div>
     </header>
@@ -46,7 +46,7 @@
     <section class="text-page">
       <div class="container">
         <h1>CHMAREKH Yassine</h1>
-        <h4>je suis un <span class="job"></span></h4>
+        <h4><first data-lang="iam">je suis un</first> <span class="job"></span></h4>
       </div>
     </section>
 
@@ -106,5 +106,6 @@
     <script src="assets/js/typed.js"></script>
     <script src="assets/js/particles.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/lang.js"></script>
   </body>
 </html>
