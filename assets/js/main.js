@@ -20,3 +20,25 @@ navigation_skills.forEach(item => {
 });
 
 
+// navigation projects
+const navigation_projects = document.querySelectorAll('.projects_sec .projects_navigation ul li');
+const content_projects = document.querySelectorAll('.projects_sec .projects_content ul li');
+
+navigation_projects.forEach(item => {
+  item.addEventListener('click', function () {
+    const content = document.querySelector(this.dataset.target);
+
+    navigation_projects.forEach(i=> {
+      i.classList.remove('active');
+    });
+
+    content_projects.forEach(i=> {
+      i.classList.remove('active');
+    });
+
+    content.classList.add('active');
+    this.classList.add('active');
+  });
+});
+
+

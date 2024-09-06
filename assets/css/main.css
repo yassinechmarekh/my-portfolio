@@ -179,6 +179,7 @@ header .lang {
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
+  z-index: 100;
 }
 
 .nav_menu ul {
@@ -295,6 +296,9 @@ header .lang {
     right: 50%;
     transform: translateX(50%);
   }
+  .social_links {
+    bottom: 75px;
+  }
   .text-page h1 {
     font-size: 40px;
   }
@@ -303,7 +307,7 @@ header .lang {
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 550px) {
   header h1 {
     font-size: 18px;
   }
@@ -320,7 +324,6 @@ header .lang {
   .text-page {
     width: 100%;
   }
-  .nav_menu ul a li i,
   .social_links ul li i {
     font-size: 16px;
   }
@@ -349,9 +352,6 @@ header .lang {
   .nav_menu ul a li i,
   .social_links ul li i {
     font-size: 16px;
-  }
-  .social_links {
-    bottom: 75px;
   }
   .nav_menu {
     transform: translateX(-54%);
@@ -391,20 +391,25 @@ header .lang {
   gap: 20px;
 }
 
+.projects_sec .project_text,
 .about_sec .about_text .description {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
+.projects_sec .project_text h1,
 .about_sec .about_text .description h1 {
   font-size: 32px;
+  text-transform: capitalize;
 }
 
+.projects_sec .project_text h1 span,
 .about_sec .about_text .description h1 span {
   color: var(--details-color);
 }
 
+.projects_sec .project_text p,
 .about_sec .about_text .description p {
   font-size: 14px;
   line-height: 1.8;
@@ -453,18 +458,22 @@ header .lang {
   border-color: var(--second-color);
 }
 
+.projects_sec .my_projects,
 .about_sec .skills_sec {
   width: 48%;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-right: 20px;
 }
 
+.projects_sec .my_projects .projects_navigation ul,
 .about_sec .skills_sec .navigation_skills ul {
   display: flex;
   gap: 30px;
 }
 
+.projects_sec .my_projects .projects_navigation ul li,
 .about_sec .skills_sec .navigation_skills ul li {
   padding: 5px 0;
   font-size: 14px;
@@ -476,11 +485,14 @@ header .lang {
   transition: 0.3s ease-in-out;
 }
 
+.projects_sec .my_projects .projects_navigation ul li:hover,
+.projects_sec .my_projects .projects_navigation ul li.active,
 .about_sec .skills_sec .navigation_skills ul li:hover,
 .about_sec .skills_sec .navigation_skills ul li.active {
   color: var(--details-color);
 }
 
+.projects_sec .my_projects .projects_navigation ul li::after,
 .about_sec .skills_sec .navigation_skills ul li::after {
   position: absolute;
   content: "";
@@ -492,15 +504,19 @@ header .lang {
   transition: 0.3s ease-in-out;
 }
 
+.projects_sec .my_projects .projects_navigation ul li:hover::after,
+.projects_sec .my_projects .projects_navigation ul li.active::after,
 .about_sec .skills_sec .navigation_skills ul li:hover::after,
 .about_sec .skills_sec .navigation_skills ul li.active::after {
   width: 100%;
 }
 
+.projects_sec .my_projects .projects_content ul li,
 .about_sec .skills_sec .content_skills ul li {
   display: none;
 }
 
+.projects_sec .my_projects .projects_content ul li.active,
 .about_sec .skills_sec .content_skills ul li.active {
   display: block;
 }
@@ -606,12 +622,16 @@ header .lang {
   .about_sec .skills_sec .content_skills ul li .skills {
     margin: 0;
   }
+  .projects_sec .project_text p,
   .about_sec .about_text .description p {
     margin-right: 40px;
   }
+  .projects_sec .project_text h1,
   .about_sec .about_text .description h1 {
     font-size: 30px;
   }
+  .projects_sec .project_text p,
+  .projects_sec .my_projects .projects_navigation ul li,
   .about_sec .skills_sec .navigation_skills ul li,
   .about_sec .about_text .about_btn a span,
   .about_sec .about_text .description p {
@@ -634,16 +654,20 @@ header .lang {
   }
 }
 
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
+  .projects_sec .project_text p,
   .about_sec .about_text .description p {
     margin: 0;
   }
-}
+} */
 
 @media (max-width: 550px) {
+  .projects_sec .project_text h1,
   .about_sec .about_text .description h1 {
     font-size: 28px;
   }
+  .projects_sec .project_text p,
+  .projects_sec .my_projects .projects_navigation ul li,
   .about_sec .skills_sec .navigation_skills ul li,
   .about_sec .about_text .about_btn a span,
   .about_sec .about_text .description p {
@@ -809,4 +833,122 @@ header .lang {
 
 /*****************************************************************************************************/
 /****************************************    end contact page    *************************************/
+/*****************************************************************************************************/
+
+/*****************************************************************************************************/
+/****************************************  start projects page    ************************************/
+/*****************************************************************************************************/
+
+.projects_sec {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+
+.projects_sec .container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.projects_sec .project_text {
+  width: 48%;
+}
+
+.projects_sec .projects_content .projects-swp {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects_sec .projects_content .projects .project {
+  width: 250px !important;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.projects_sec .projects_content .projects .project img {
+  width: 100%;
+  position: relative;
+}
+
+.projects_sec .projects_content .projects .project a {
+  opacity: 0;
+}
+
+.projects_sec .projects_content .projects .project:hover a {
+  opacity: 1;
+}
+
+.projects_sec .projects_content .projects .project a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000071;
+  color: var(--second-color);
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  transition: 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.projects_sec .projects_content .projects .project a:hover span {
+  text-decoration: underline;
+}
+
+.projects_sec .projects_content .projects-swp .swiper-pagination {
+  position: absolute;
+  top: 100%;
+}
+
+.projects_sec .projects_content .projects-swp .swiper-pagination span {
+  background-color: var(--details-color);
+}
+
+.projects_sec
+  .projects_content
+  .projects-swp
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
+  width: 35px !important;
+  border-radius: 30px !important;
+}
+
+/* start responsive */
+
+@media (max-width: 950px) {
+  .projects_sec .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .projects_sec .project_text {
+    width: 100%;
+  }
+  .projects_sec .my_projects {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  .projects_sec .my_projects {
+    width: 100%;
+  }
+  .projects_sec .project_text p {
+    margin-right: 0;
+  }
+}
+
+
+/* end responsive */
+
+/*****************************************************************************************************/
+/****************************************    end projects page   *************************************/
 /*****************************************************************************************************/
