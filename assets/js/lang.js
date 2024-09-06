@@ -73,7 +73,7 @@ languageSelctor.addEventListener("change", (event) => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    setLanguage(localStorage.getItem("lang"));
+  setLanguage(localStorage.getItem("lang"));
 });
 
 const setLanguage = (language) => {
