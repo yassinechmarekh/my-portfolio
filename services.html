@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yassine CHMAREKH - Portfolio</title>
+
+    <!-- link to file css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- link font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- website icon -->
+    <link rel="icon" href="assets/images/icon/website-icon.png" />
+  </head>
+  <body>
+    <!-- particles-two container -->
+    <div id="particles-two"></div>
+
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo"><h1>Yassine_ChM</h1></a>
+        <select name="language" id="language" class="lang">
+          <option value="fr">français</option>
+          <option value="en">english</option>
+        </select>
+      </div>
+    </header>
+
+    <section class="nav_menu">
+      <div class="container">
+        <ul>
+          <a href="index.html"
+            ><li id="home"><i class="fa-solid fa-house"></i></li
+          ></a>
+          <a href="about.html"
+            ><li id="about"><i class="fa-solid fa-user"></i></li
+          ></a>
+          <a href="services.html"
+            ><li id="services" class="active">
+              <i class="fa-solid fa-gears"></i></li
+          ></a>
+          <a href="projects.html"
+            ><li id="projects"><i class="fa-solid fa-diagram-project"></i></li
+          ></a>
+          <a href="contact.html"
+            ><li id="contact"><i class="fa-solid fa-envelope"></i></li
+          ></a>
+        </ul>
+      </div>
+    </section>
+
+    <section class="services_sec">
+      <div class="container">
+        <div class="services_content">
+          <h1>mes <span>services</span></h1>
+          <p>
+            Je propose des services de développement web adaptés à vos besoins :
+            landing pages optimisées, portfolios personnalisés, sites e-commerce
+            avec gestion simplifiée et applications web sur mesure. Mon objectif
+            est de fournir des solutions performantes et innovantes, tout en
+            assurant une expérience utilisateur de qualité.
+          </p>
+        </div>
+        <div class="my_services">
+          <div class="services-swp mySwiper">
+            <div class="swiper-wrapper services">
+              <div class="swiper-slide service">
+                <div class="content">
+                  <img
+                    class="service_icon"
+                    src="assets/images/services/landing-page.svg"
+                    alt=""
+                  />
+                  <h1>Landing Pages</h1>
+                  <p>
+                    Que vous ayez besoin d'une landing page simple avec une
+                    seule page et plusieurs sections ou d'un site multi-pages,
+                    nous créons des interfaces attrayantes et performantes pour
+                    captiver vos visiteurs.
+                  </p>
+                </div>
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+
+              <div class="swiper-slide service">
+                <div class="content">
+                  <img
+                    class="service_icon"
+                    src="assets/images/services/portfolio.svg"
+                    alt=""
+                  />
+                  <h1>Portfolios Personnalisés</h1>
+                  <p>
+                    Mettez en valeur votre travail avec un portfolio
+                    personnalisé. Nous créons des designs sur mesure pour
+                    présenter vos compétences, projets et expériences de manière
+                    professionnelle.
+                  </p>
+                </div>
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+
+              <div class="swiper-slide service">
+                <div class="content">
+                  <img
+                    class="service_icon"
+                    src="assets/images/services/ecommerce.svg"
+                    alt=""
+                  />
+                  <h1>Sites E-commerces</h1>
+                  <p>
+                    Nous développons des sites e-commerce complets avec une
+                    interface utilisateur fluide pour présenter vos produits et
+                    une dashboard intuitive pour gérer vos ventes, vos stocks et
+                    vos clients.
+                  </p>
+                </div>
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+
+              <div class="swiper-slide service">
+                <div class="content">
+                  <img
+                    class="service_icon"
+                    src="assets/images/services/application-web.svg"
+                    alt=""
+                  />
+                  <h1>Applications Web de Gestion</h1>
+                  <p>
+                    Optimisez la gestion de vos données avec des applications
+                    web sur mesure, adaptées à vos besoins spécifiques, qu'il
+                    s'agisse de gestion de projets, de clients ou de toute autre
+                    solution.
+                  </p>
+                </div>
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- js links -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/app-two.js"></script>
+    <script src="assets/js/swiper.js"></script>
+  </body>
+</html>

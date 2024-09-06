@@ -398,17 +398,20 @@ header .lang {
   gap: 10px;
 }
 
+.services_sec .services_content h1,
 .projects_sec .project_text h1,
 .about_sec .about_text .description h1 {
   font-size: 32px;
   text-transform: capitalize;
 }
 
+.services_sec .services_content h1 span,
 .projects_sec .project_text h1 span,
 .about_sec .about_text .description h1 span {
   color: var(--details-color);
 }
 
+.services_sec .services_content p,
 .projects_sec .project_text p,
 .about_sec .about_text .description p {
   font-size: 14px;
@@ -626,10 +629,12 @@ header .lang {
   .about_sec .about_text .description p {
     margin-right: 40px;
   }
+  .services_sec .services_content h1,
   .projects_sec .project_text h1,
   .about_sec .about_text .description h1 {
     font-size: 30px;
   }
+  .services_sec .services_content p,
   .projects_sec .project_text p,
   .projects_sec .my_projects .projects_navigation ul li,
   .about_sec .skills_sec .navigation_skills ul li,
@@ -662,10 +667,12 @@ header .lang {
 } */
 
 @media (max-width: 550px) {
+  .services_sec .services_content h1,
   .projects_sec .project_text h1,
   .about_sec .about_text .description h1 {
     font-size: 28px;
   }
+  .services_sec .services_content p,
   .projects_sec .project_text p,
   .projects_sec .my_projects .projects_navigation ul li,
   .about_sec .skills_sec .navigation_skills ul li,
@@ -946,9 +953,155 @@ header .lang {
   }
 }
 
-
 /* end responsive */
 
 /*****************************************************************************************************/
 /****************************************    end projects page   *************************************/
+/*****************************************************************************************************/
+
+/*****************************************************************************************************/
+/***************************************    start services page   ************************************/
+/*****************************************************************************************************/
+
+.services_sec {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+}
+
+.services_sec .container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.services_sec .services_content {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.services_sec .my_services {
+  width: 48%;
+}
+
+.services_sec .services .service {
+  padding: 20px;
+  height: 350px;
+  background-color: #ffffff16;
+  border: 1px solid var(--parag-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.services_sec .services .service .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.services_sec .services .service .service_icon {
+  width: 50px;
+}
+
+.services_sec .services .service h1 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.services_sec .services .service p {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.services_sec .services .service i {
+  font-size: 25px;
+  color: var(--second-color);
+  transform: rotate(45deg);
+  width: fit-content;
+  transition: 0.3s ease-in-out;
+}
+
+.services_sec .services .service:hover i {
+  color: var(--details-color);
+  transform: rotate(0);
+}
+
+.services_sec .my_services .services-swp {
+  position: relative;
+  overflow: hidden;
+}
+
+/* start responsive */
+@media (max-width: 1070px) {
+  .services_sec .services_content {
+    width: 45%;
+  }
+  .services_sec .my_services {
+    width: 55%;
+  }
+}
+
+@media (max-width: 950px) {
+  .services_sec .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .services_sec .services_content {
+    width: 100%;
+  }
+  .services_sec .my_services {
+    width: 100%;
+  }
+  .services_sec .services .service {
+    height: 380px;
+  }
+}
+
+@media (max-width: 750px) {
+  .services_sec .services .service {
+    height: 350px;
+  }
+}
+
+@media (max-width: 550px) {
+  .services_sec .services .service {
+    height: 380px;
+  }
+  .services_sec .services .service h1 {
+    font-size: 19px;
+  }
+  .services_sec .services .service p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 500px) {
+  .services_sec .services .service {
+    height: 300px;
+  }
+}
+
+@media (max-width: 350px) {
+  .services_sec .services .service {
+    height: 350px;
+  }
+  .services_sec .services {
+    margin-bottom: 80px;
+  }
+  .services_sec .container{
+    gap: 20px;
+  }
+}
+/* end responsive */
+
+/*****************************************************************************************************/
+/****************************************    end services page   *************************************/
 /*****************************************************************************************************/
