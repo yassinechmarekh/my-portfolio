@@ -7,9 +7,9 @@ var swiper = new Swiper(".projects-swp", {
     },
     slidesPerView: 2,
     spaceBetween: 10,
-    // autoplay: {
-    //     delay: 3500,
-    // },
+    autoplay: {
+        delay: 3500,
+    },
     loop: true,
   });
 
@@ -23,9 +23,9 @@ var swiper = new Swiper(".services-swp", {
     },
     spaceBetween: 10,
     slidesPerView: 2,
-    // autoplay: {
-    //     delay: 3500,
-    // },
+    autoplay: {
+        delay: 3500,
+    },
     loop: true,
     breakpoints: {
       950: {
