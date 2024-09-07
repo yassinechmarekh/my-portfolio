@@ -929,7 +929,7 @@ header .lang:focus{
 }
 
 .projects_sec .projects_content .projects .project {
-  width: 250px !important;
+  width: 49% !important;
   border-radius: 5px;
   overflow: hidden;
 }
