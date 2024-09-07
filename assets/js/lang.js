@@ -30,6 +30,7 @@ const transitions = {
       "Découvrez une sélection de mes projets qui illustrent ma passion pour le développement web. Chaque projet est une opportunité d'appliquer mes compétences techniques et de proposer des solutions créatives et fonctionnelles. Que ce soit des landing pages, des applications web interactives ou des plateformes e-commerce, chaque réalisation met en avant mon souci du détail et ma capacité à répondre aux besoins spécifiques des clients.",
     contactme: "Contactez-moi",
     sendMessage: "envoyer",
+    projectLink: "lien du projet",
   },
   en: {
     french: "french",
@@ -62,6 +63,7 @@ const transitions = {
       "Discover a selection of my projects that showcase my passion for web development. Each project is an opportunity to apply my technical skills and offer creative and functional solutions. Whether it's landing pages, interactive web applications, or e-commerce platforms, each accomplishment highlights my attention to detail and my ability to meet clients' specific needs.",
     contactme: "Contact me",
     sendMessage: "send",
+    projectLink: "project link",
   },
 };
 
