@@ -75,7 +75,7 @@ body {
   height: 100%;
   width: 0;
   background: var(--details-color);
-  animation: 2s prog ease-in infinite;
+  animation: 2s prog ease-in forwards;
 }
 
 @keyframes prog {
