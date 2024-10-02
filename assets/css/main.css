@@ -647,6 +647,10 @@ header .lang:focus{
   content: "LARAVEL";
 }
 
+.about_sec .skills_sec .content_skills ul li .skills #bootstrap:hover::after {
+  content: "Bootstrap";
+}
+
 .about_sec .skills_sec .content_skills ul li .skills #vscode:hover::after {
   content: "VS Code";
   width: 52px;
