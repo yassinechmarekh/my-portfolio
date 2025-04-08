@@ -9,7 +9,7 @@ const transitions = {
     btncv: "curriculum vitae",
     btnprojects: "projets",
     languages: "langages",
-    frameworks: "frameworks",
+    frameworks: "frameworks & bibliothèques",
     tools: "outils",
     my: "mes",
     servicesdescription:
@@ -42,7 +42,7 @@ const transitions = {
     btncv: "resume",
     btnprojects: "projects",
     languages: "languages",
-    frameworks: "frameworks",
+    frameworks: "frameworks & libraries",
     tools: "tools",
     my: "my",
     servicesdescription:

@@ -631,12 +631,21 @@ header .lang:focus{
   width: 70px;
 }
 
+.about_sec .skills_sec .content_skills ul li .skills #typescript:hover::after {
+  content: "Type Script";
+  width: 70px;
+}
+
 .about_sec .skills_sec .content_skills ul li .skills #php:hover::after {
   content: "PHP";
 }
 
 .about_sec .skills_sec .content_skills ul li .skills #sql:hover::after {
   content: "SQL";
+}
+
+.about_sec .skills_sec .content_skills ul li .skills #mongodb:hover::after {
+  content: "MongoDB";
 }
 
 .about_sec .skills_sec .content_skills ul li .skills #uml:hover::after {
@@ -647,8 +656,24 @@ header .lang:focus{
   content: "LARAVEL";
 }
 
+.about_sec .skills_sec .content_skills ul li .skills #express:hover::after {
+  content: "Express";
+}
+
+.about_sec .skills_sec .content_skills ul li .skills #tailwind:hover::after {
+  content: "Tailwind";
+}
+
 .about_sec .skills_sec .content_skills ul li .skills #bootstrap:hover::after {
   content: "Bootstrap";
+}
+
+.about_sec .skills_sec .content_skills ul li .skills #react:hover::after {
+  content: "React";
+}
+
+.about_sec .skills_sec .content_skills ul li .skills #shadcn:hover::after {
+  content: "ShadCN";
 }
 
 .about_sec .skills_sec .content_skills ul li .skills #vscode:hover::after {
@@ -667,6 +692,12 @@ header .lang:focus{
 }
 .about_sec .skills_sec .content_skills ul li .skills #composer:hover::after {
   content: "Composer";
+}
+.about_sec .skills_sec .content_skills ul li .skills #postman:hover::after {
+  content: "Postman";
+}
+.about_sec .skills_sec .content_skills ul li .skills #npm:hover::after {
+  content: "NPM";
 }
 
 /* start responsive */
